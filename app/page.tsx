@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { ArrowRight, Star, Heart, Sparkles } from 'lucide-react'
+import Link from 'next/link'
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-background to-secondary/20">
@@ -20,10 +21,12 @@ export default function Home() {
             Let&apos;s build something extraordinary together.
           </p>
           <div className="mt-12 flex gap-4 justify-center animate-in fade-in slide-in-from-bottom-5 duration-1000">
-            <Button size="lg" className="px-8 group">
-              Get Started
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Button>
+            <Link href="/get-started">
+              <Button size="lg" className="px-8 group">
+                Get Started
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link>
             <Button size="lg" variant="outline" className="px-8">
               Learn More
             </Button>
@@ -83,9 +86,11 @@ export default function Home() {
           <p className="text-muted-foreground mb-8 max-w-[600px] mx-auto">
             Join us in creating something extraordinary. Your next amazing project begins here.
           </p>
-          <Button size="lg" className="px-8">
-            Begin Now
-          </Button>
+          <Link href="/get-started">
+            <Button size="lg" className="px-8">
+              Begin Now
+            </Button>
+          </Link>
         </div>
       </section>
       {/* Footer */}
