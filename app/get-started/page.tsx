@@ -103,11 +103,24 @@ export default function GetStarted() {
         </div>
       </section>
       {/* Footer */}
-      <footer className="border-t bg-background/50 backdrop-blur-sm mt-16">
-        <div className="container mx-auto px-4 h-16 flex items-center justify-center">
-          <p className="text-sm text-muted-foreground">
-            Secure payment processing powered by Stripe
-          </p>
+      <footer className="border-t bg-background/50 backdrop-blur-sm">
+        <div className="container mx-auto px-4 py-8">
+          <div className="flex flex-col items-center justify-center space-y-4">
+            <p className="text-sm text-muted-foreground">
+              © 2024 Your Beautiful Creation. All rights reserved.
+            </p>
+            <div className="flex space-x-4">
+              <Button variant="ghost" size="sm">
+                Privacy
+              </Button>
+              <Button variant="ghost" size="sm">
+                Terms
+              </Button>
+              <Button variant="ghost" size="sm">
+                Contact
+              </Button>
+            </div>
+          </div>
         </div>
       </footer>
     </main>
